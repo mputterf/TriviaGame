@@ -1,0 +1,33 @@
+button{
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+#question-container, #intro-box, #result-box{
+    background-color: beige;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+#heading{
+    background-color: beige;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#Question1,  #instructions, #answered-correctly{
+    padding-top: 20px;
+}
+
+#no-answer{
+    padding-bottom: 20px;
+}

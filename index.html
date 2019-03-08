@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGame</title>
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        
+    <div id="heading">
+            <h1>Of Tech and Gaming Trivia</h1>
+
+            <h4>Time Remaining: <span id="time-remaining"></span></h4>
+        </div>
+    <div class="container text-center">
+        
+        
+        <br>
+        <br>
+
+        <div id="question-container">
+              
+            <div id="Question1">
+                <h6>What animal is the mascot of Linux?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q1A1" name="Answers1" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q1A1">A dog</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q1A2" name="Answers1" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q1A2">A cat</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q1A3" name="Answers1" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q1A3">A penguin</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q1A4" name="Answers1" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q1A4">An elephant</label>
+                </div>
+            </div>
+                
+            <br>
+            <br>
+            <div id="Question2">
+                <h6>What was Nintendo's first home video game console?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q2A1" name="Answers2" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q2A1">The Xbox</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q2A2" name="Answers2" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q2A2">The Wii</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q2A3" name="Answers2" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q2A3">The Genesis</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q2A4" name="Answers2" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q2A4">The NES</label>
+                </div>
+            </div>
+                
+            <br>
+            <br>
+            <div id="Question3">
+                <h6>Apple was founded in California</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q3A1" name="Answers3" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q3A1">true</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q3A2" name="Answers3" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q3A2">false</label>
+                </div>
+                <!-- <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q3A3" name="Answers3" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q3A3">Option 3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q3A4" name="Answers3" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q3A4">Option 4</label>
+                </div> -->
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question4">
+                <h6>What is the processes of fixing errors in a program called?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q4A1" name="Answers4" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q4A1">Scrubbing</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q4A2" name="Answers4" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q4A2">Debugging</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q4A3" name="Answers4" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q4A3">Bashing</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q4A4" name="Answers4" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q4A4">Scanning</label>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question5">
+                <h6>What is the name of Apple's operating system?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q5A1" name="Answers5" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q5A1">PearOS</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q5A2" name="Answers5" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q5A2">Debian</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q5A3" name="Answers5" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q5A3">Mac OS</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q5A4" name="Answers5" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q5A4">Windows</label>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question6">
+                <h6>What was Mario's original name?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q6A1" name="Answers6" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q6A1">Wario</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q6A2" name="Answers6" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q6A2">Hammer Bro</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q6A3" name="Answers6" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q6A3">Jumpman</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q6A4" name="Answers6" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q6A4">Bowser</label>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question7">
+                <h6>Who is the classic arcade character who eats pellets and is chased by ghosts in a maze</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q7A1" name="Answers7" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q7A1">Pikachu</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q7A2" name="Answers7" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q7A2">Sonic</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q7A3" name="Answers7" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q7A3">Donkey Kong</label>
+                </div>
+                 <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q7A4" name="Answers7" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q7A4">Pac-Man</label>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question8">
+                <h6>A floppy disk was originally not floppy</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q8A1" name="Answers8" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q8A1">True</label>
+                 </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q8A2" name="Answers8" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q8A2">False</label>
+                </div>
+                <!-- <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q8A3" name="Answers8" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q8A3">Option 3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q8A4" name="Answers8" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q8A4">Option 4</label>
+                </div> -->
+            </div>
+    
+            <br>
+            <br>
+            <div id="Question9">
+                <h6>Which mobile OS uses the Linux kernel?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q9A1" name="Answers9" class="custom-control-input" value="option1">
+                    <label class="custom-control-label" for="Q9A1">Android</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q9A2" name="Answers9" class="custom-control-input" value="option2">
+                    <label class="custom-control-label" for="Q9A2">iOS</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q9A3" name="Answers9" class="custom-control-input" value="option3">
+                    <label class="custom-control-label" for="Q9A3">Windows Phone</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="Q9A4" name="Answers9" class="custom-control-input" value="option4">
+                    <label class="custom-control-label" for="Q9A4">Blackberry</label>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <button type="button" id="submit-button">Submit</button>
+        </div>
+            
+    </div>
+
+    <!-- jQery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!-- Game JS -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- Boostrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
